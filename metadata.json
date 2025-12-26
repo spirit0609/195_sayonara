@@ -1,0 +1,5 @@
+{
+  "name": "Order Parser",
+  "description": "An AI-powered tool to parse invoices and receipts into university-formatted accounting data using Gemini.",
+  "requestFramePermissions": []
+}
