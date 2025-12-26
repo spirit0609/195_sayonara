@@ -13,7 +13,7 @@ const ApiKeyInput: React.FC<ApiKeyInputProps> = ({ onSave, initialKey = '' }) =>
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (!key.trim()) {
-            setError('APIキーを入力してください (gemini)');
+            setError('APIキーを入力してください');
             return;
         }
         // Basic validation (optional, can be improved)
@@ -36,6 +36,7 @@ const ApiKeyInput: React.FC<ApiKeyInputProps> = ({ onSave, initialKey = '' }) =>
             <p className="text-slate-600 mb-6 text-sm">
                 Google Gemini APIを利用するために、APIキーが必要です。<br />
                 キーはブラウザにのみ一時保存され、ブラウザを閉じると削除されます。
+                2025年12月26日 ver。
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
