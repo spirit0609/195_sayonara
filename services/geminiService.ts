@@ -7,9 +7,9 @@ const generateId = () => Math.random().toString(36).substring(2, 9);
 export const parseInvoiceWithGemini = async (
   file: File,
   mimeType: string,
-  base64Data: string
+  base64Data: string,
+  apiKey: string
 ): Promise<InvoiceData> => {
-  const apiKey = process.env.API_KEY;
   if (!apiKey) {
     throw new Error("API Key is missing.");
   }
